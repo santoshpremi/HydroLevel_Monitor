@@ -10,7 +10,7 @@ def home(request):
 
     import requests
     series_data = requests.get(
-        'https://hydrology.gov.np/gss/api/socket/river_test/response').json()
+        'https://something/response').json()
     # print(type(series_data))
     data_result = []
     for x in series_data:
@@ -25,7 +25,7 @@ def home(request):
                 data['longitude'] = longitude
                 data['latitude'] = latitude               
                 all_data = requests.get(
-                    'https://hydrology.gov.np/gss/api/observation?series_id={series_value}&date_from={from_date}T01:00:00&date_to={to_date}T01:00:00'.format(series_value=series_value, from_date=from_date, to_date=to_date)).json()
+                    'https://something//format(series_value=series_value, from_date=from_date, to_date=to_date)).json()
             
                 water_level_value = [float(i['value']) for i in all_data['data']]
 
