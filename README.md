@@ -1,7 +1,7 @@
 # Python-Django-Api-Mapbox-gl-js-mapping
 
 
-1.Use of django babckend
+1.Use of django backend
 2.Use of javascript and Jquery 
 3.Learn to call api with User authentication 
 4.Best use of High Charts
