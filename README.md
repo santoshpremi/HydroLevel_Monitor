@@ -6,5 +6,4 @@
 3.Learn to call api with User authentication <br> 
 4.Best use of High Charts <br>
 5.Mathemmatical Analysis  <br>
-6.Mapbox gl js uses <br>
-Find the graph with maximum rise , maximum fall, etc
+6.Mapbox gl js uses 
