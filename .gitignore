@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Django
+db.sqlite3
+
+# Virtual environments
+m-env/
+venv/
+env/
+
+# OS junk files
+.DS_Store
+Thumbs.db
+ Ehthumbs.db

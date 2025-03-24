@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hydrometer Data Map</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <form action="" method="get">
+      <label for="your_name">Date From: </label>
+      <input id="datetimepickerfrom" type="text" name="datefrom" />
+      <label for="your_name">Date to: </label>
+      <input id="datetimepickerto" type="text" name="dateto" />
+      <input
+        style="background-color: rgb(75, 75, 243)"
+        type="submit"
+        value="Go!"
+      />
+    </form>
+    <br />
+
+    <div id="map" class="map-box">
+      <div class="map-overlay" id="legend"></div>
+    </div>
+
+    <button onclick="clickMax()" id="maxButton" class="button">
+      Maximum Level</button
+    ><br />
+    <button onclick="clickMin()" id="minButton" class="button">
+      Minimum Level</button
+    ><br />
+    <button onclick="clickAverage()" id="averageButton" class="button">
+      Average Level</button
+    ><br />
+    <button onclick="clickMaxRise()" id="maxRiseButton" class="button">
+      Maximum Rise</button
+    ><br />
+    <button onclick="clickMaxFall()" id="maxFallButton" class="button">
+      Maximum Fall</button
+    ><br />
+    <button onclick="clickClear()" class="button">Clear</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+  </body>
+</html>
