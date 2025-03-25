@@ -9,8 +9,7 @@ db.sqlite3
 
 # Virtual environments
 m-env/
-venv/
-env/
+
 
 # OS junk files
 .DS_Store
